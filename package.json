@@ -1,0 +1,35 @@
+{
+  "name": "rn-mmkv-storage-flipper",
+  "version": "1.0.0",
+  "description": "Flipper plugin to see MMKV Storage actions",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pnthach95/rn-mmkv-storage-flipper.git"
+  },
+  "keywords": [
+    "flipper",
+    "mmkv",
+    "react-native"
+  ],
+  "author": "Pham Ngoc Thach",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pnthach95/rn-mmkv-storage-flipper/issues"
+  },
+  "homepage": "https://github.com/pnthach95/rn-mmkv-storage-flipper#readme",
+  "peerDependencies": {
+    "react-native-flipper": "latest",
+    "react-native-mmkv-storage": "latest"
+  },
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "prettier": "^2.7.1",
+    "react-native-flipper": "latest",
+    "react-native-mmkv-storage": "latest",
+    "typescript": "^4.7.4"
+  }
+}

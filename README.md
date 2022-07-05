@@ -1,0 +1,41 @@
+# React Native Flipper plugin for [React Native MMKV Storage](https://github.com/ammarahm-ed/react-native-mmkv-storage)
+
+Use this with [my Flipper desktop plugin](https://github.com/pnthach95/flipper-plugin-react-native-mmkv-storage)
+
+![gif](docs/example.gif)
+
+_* Tested on Flipper v0.152.0, React Native v0.68.2, RN MMKV Storage source code from github_
+
+## Install
+
+```bash
+yarn add react-native-flipper rn-mmkv-storage-flipper --dev
+```
+
+or
+
+```bash
+npm i react-native-flipper rn-mmkv-storage-flipper -D
+```
+
+Your code:
+
+```js
+import {MMKVLoader} from 'react-native-mmkv-storage';
+import mmkvFlipper from 'rn-mmkv-storage-flipper';
+
+const MMKV = new MMKVLoader()
+  .withInstanceID('test')
+  .withEncryption()
+  .initialize();
+
+if (__DEV__) {
+  mmkvFlipper(MMKV);
+}
+```
+
+## FAQ
+
+### My Android app crashes nonstop
+
+This is known [issus](https://github.com/facebook/flipper/issues/3026#issuecomment-966631294) on Flipper. The workaround is keep Flipper opening while running app on debug mode, no crashes on release.

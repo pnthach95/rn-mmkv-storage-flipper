@@ -6,6 +6,10 @@ Use this with [my Flipper desktop plugin](https://github.com/pnthach95/flipper-p
 
 _* Tested on Flipper v0.152.0, React Native v0.68.2, RN MMKV Storage source code from github_
 
+## Requirement
+
+`react-native-mmkv-storage` v0.8.0 or newer. Older versions (from 0.6.1 to 0.7.6) are compatible but [some logs can't be shown](https://github.com/ammarahm-ed/react-native-mmkv-storage/issues/264)
+
 ## Install
 
 ```bash

@@ -38,6 +38,24 @@ if (__DEV__) {
 }
 ```
 
+Multiple MMKV Instances:
+
+```js
+const MMKV1 = new MMKVLoader()
+  .withInstanceID('test1')
+  .withEncryption()
+  .initialize();
+
+const MMKV2 = new MMKVLoader()
+  .withInstanceID('test2')
+  .withEncryption()
+  .initialize();
+
+if (__DEV__) {
+  mmkvFlipper([MMKV1, MMKV2]);
+}
+```
+
 ## FAQ
 
 ### My Android app crashes nonstop

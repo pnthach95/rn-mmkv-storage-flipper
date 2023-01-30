@@ -61,3 +61,7 @@ if (__DEV__) {
 ### My Android app crashes nonstop
 
 This is known [issus](https://github.com/facebook/flipper/issues/3026#issuecomment-966631294) on Flipper. The workaround is keep Flipper opening while running app on debug mode, no crashes on release.
+Or run command below:
+```bash
+adb shell run-as "replace.this.with.your.app.id" rm -rf files/sonar
+```

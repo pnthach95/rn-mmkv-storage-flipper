@@ -1,10 +1,10 @@
 {
   "name": "rn-mmkv-storage-flipper",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Flipper plugin to see MMKV Storage actions",
   "main": "./dist/index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc && esbuild dist/index.js --minify --outfile=dist/index.js --allow-overwrite"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
     "react-native-mmkv-storage": "latest"
   },
   "devDependencies": {
+    "esbuild": "^0.17.5",
     "eslint": "7.32.0",
     "prettier": "^2.7.1",
     "react-native-flipper": "latest",
